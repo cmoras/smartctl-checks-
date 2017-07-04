@@ -1,0 +1,3 @@
+c=$(storcli show  | grep LSI | awk '{print $1}'); storcli /c$c show
+
+ storcli /c0 show  | grep -A 30 ^EID:Slt | grep ^[0-9] | awk '{print $1}' | while read p; do  echo $p; 
