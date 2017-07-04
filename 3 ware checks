@@ -1,0 +1,26 @@
+sep="========================";
+
+c=$(tw_cli show | grep ^c | awk '{print $1}' |sed 's/c//g');
+
+echo "3ware details in one shection"; 
+
+tw_cli /c$c show all; 
+
+echo $sep;
+echo "ATA section";
+lsscsi.pl | grep ATA | awk '{print $NF}' | while read i;  
+
+  do 
+  echo $sep; 
+  smartctl -a $i | egrep "Raw_Read_Error_Rate|Program_Fail_Count|Erase_Fail_Count|Unexpect_Power_Loss_Ct|ECC_Uncorr_Error_Count|Reallocated_Event_Count|Unc_Soft_Read_Err_Rate|Soft_ECC_Correct_Rate|Raw_Read_Error_Rate";
+  echo $sep; 
+  done;
+  
+echo "SCSI section"; 
+
+tw_cli /c$c show | awk '/^p/ {print $1}' | sed 's/p//g' |while read p;
+  do 
+  echo "---***---port=$p";
+  smartctl -a -d 3ware,$p /dev/tw?0|egrep "Raw_Read_Error_Rate|Reallocated_Sector_Ct|Reallocated_Event_Count|Current_Pending_Sector|Offline_Uncorrectable|UDMA_CRC_Error_Count";
+  echo $sep;
+  done;
