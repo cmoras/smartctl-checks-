@@ -1,3 +1,144 @@
+Controller = 0
+Status = Success
+Description = None
+
+Product Name = LSI MegaRAID SAS 9285-8e
+Serial Number = SV12704839
+SAS Address =  500605b0038f9320
+PCI Address = 00:03:00:00
+System Time = 07/04/2017 10:53:07
+Mfg. Date = 06/29/11
+Controller Time = 07/04/2017 10:52:58
+FW Package Build = 23.12.0-0013
+BIOS Version = 5.42.00_4.12.05.00_0x05270000
+FW Version = 3.240.25-2382
+Driver Name = megaraid_sas
+Driver Version = 06.700.06.00-rc1
+Vendor Id = 0x1000
+Device Id = 0x5B
+SubVendor Id = 0x1000
+SubDevice Id = 0x9285
+Host Interface = PCIE
+Device Interface = SAS-6G
+Bus Number = 3
+Device Number = 0
+Function Number = 0
+Drive Groups = 8
+
+TOPOLOGY :
+========
+
+------------------------------------------------------------------------
+DG Arr Row EID:Slot DID Type  State BT     Size PDC  PI SED DS3  FSpace 
+------------------------------------------------------------------------
+ 0 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 0 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 0 0   0   0:0      3   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 0 0   1   0:3      2   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 1 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 1 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 1 0   0   0:2      4   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 1 0   1   0:1      8   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 2 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 2 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 2 0   0   0:4      5   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 2 0   1   0:5      7   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 3 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 3 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 3 0   0   0:6      10  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 3 0   1   0:7      13  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 4 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 4 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 4 0   0   0:8      14  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 4 0   1   0:9      12  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 5 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 5 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 5 0   0   0:10     11  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 5 0   1   0:11     16  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 6 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 6 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 6 0   0   0:12     6   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 6 0   1   0:13     15  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 7 -   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 7 0   -   -        -   RAID1 Optl  N  1.818 TB enbl N  N   none N      
+ 7 0   0   0:14     1   DRIVE Onln  N  1.818 TB enbl N  N   none -      
+ 7 0   1   0:15     18  DRIVE Onln  N  1.818 TB enbl N  N   none -      
+------------------------------------------------------------------------
+
+DG=Disk Group Index|Arr=Array Index|Row=Row Index|EID=Enclosure Device ID
+DID=Device ID|Type=Drive Type|Onln=Online|Rbld=Rebuild|Dgrd=Degraded
+Pdgd=Partially degraded|Offln=Offline|BT=Background Task Active
+PDC=PD Cache|PI=Protection Info|SED=Self Encrypting Drive|Frgn=Foreign
+DS3=Dimmer Switch 3|dflt=Default|Msng=Missing|FSpace=Free Space Present
+
+Virtual Drives = 8
+
+VD LIST :
+=======
+
+---------------------------------------------------------
+DG/VD TYPE  State Access Consist Cache sCC     Size Name 
+---------------------------------------------------------
+0/0   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+1/1   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+2/2   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+3/3   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+4/4   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+5/5   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+6/6   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+7/7   RAID1 Optl  RW     No      RAWBD -   1.818 TB      
+---------------------------------------------------------
+
+Cac=CacheCade|Rec=Recovery|OfLn=OffLine|Pdgd=Partially Degraded|dgrd=Degraded
+Optl=Optimal|RO=Read Only|RW=Read Write|B=Blocked|Consist=Consistent|
+R=Read Ahead Always|NR=No Read Ahead|WB=WriteBack|
+AWB=Always WriteBack|WT=WriteThrough|C=Cached IO|D=Direct IO|sCC=Scheduled
+Check Consistency
+
+Physical Drives = 18
+
+PD LIST :
+=======
+
+------------------------------------------------------------------------------
+EID:Slt DID State DG     Size Intf Med SED PI SeSz Model                   Sp 
+------------------------------------------------------------------------------
+0:0       3 Onln   0 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:1       8 Onln   1 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:2       4 Onln   1 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:3       2 Onln   0 1.818 TB SATA HDD N   N  512B Hitachi HUA723020ALA640 U  
+0:4       5 Onln   2 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:5       7 Onln   2 1.818 TB SATA HDD N   N  512B Hitachi HUA723020ALA640 U  
+0:6      10 Onln   3 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:7      13 Onln   3 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:8      14 Onln   4 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:9      12 Onln   4 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:10     11 Onln   5 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:11     16 Onln   5 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:12      6 Onln   6 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:13     15 Onln   6 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:14      1 Onln   7 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:15     18 Onln   7 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:16     17 GHS    - 1.818 TB SATA HDD N   N  512B Hitachi HDS723020BLA642 U  
+0:17      9 GHS    - 1.818 TB SATA HDD N   N  512B Hitachi HUA723020ALA640 U  
+------------------------------------------------------------------------------
+
+EID-Enclosure Device ID|Slt-Slot No.|DID-Device ID|DG-DriveGroup
+DHS-Dedicated Hot Spare|UGood-Unconfigured Good|GHS-Global Hotspare
+UBad-Unconfigured Bad|Onln-Online|Offln-Offline|Intf-Interface
+Med-Media Type|SED-Self Encryptive Drive|PI-Protection Info
+SeSz-Sector Size|Sp-Spun|U-Up|D-Down|T-Transition|F-Foreign
+UGUnsp-Unsupported|UGShld-UnConfigured shielded|HSPShld-Hotspare shielded
+CFShld-Configured shielded
+
+
+prev output
+
+
+
+
+
+
 c=$(storcli show  | grep LSI | awk '{print $1}'); storcli /c$c show
 
  storcli /c0 show  | grep -A 30 ^EID:Slt | grep ^[0-9] | awk '{print $1}' | while read p; do  echo $p; 
