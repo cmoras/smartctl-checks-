@@ -142,3 +142,10 @@ prev output
 c=$(storcli show  | grep LSI | awk '{print $1}'); storcli /c$c show
 
  storcli /c0 show  | grep -A 30 ^EID:Slt | grep ^[0-9] | awk '{print $1}' | while read p; do  echo $p; 
+
+
+root()@84348.pts-0.box794 [dev]# storcli /c0 show  | grep -A 30 ^EID:Slt | grep ^[0-9] | awk '{print $1}' | while read p; do  echo $p |part1=$(cut -d ':' -f1); part2=$(cut -d ':' -f2);echo $part1; echo $part2;done
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+root()@84348.pts-0.box794 [dev]# storcli /c0 show  | grep -A 30 ^EID:Slt | grep ^[0-9] | awk '{print $1}' | while read p; do  echo $p |part1=$(cut -d ':' -f1); part2=$(cut -d ':' -f2);echo $part1; done
+root()@84348.pts-0.box794 [dev]# 
