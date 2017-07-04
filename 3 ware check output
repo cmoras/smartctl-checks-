@@ -1,0 +1,166 @@
+3ware details in one shection
+/c6 Driver Version = 3.26.02.000
+/c6 Model = 9750-4i4e
+/c6 Available Memory = 488MB
+/c6 Firmware Version = FH9X 5.12.00.016
+/c6 Bios Version = BE9X 5.11.00.007
+/c6 Boot Loader Version = BT9X 6.00.00.004
+/c6 Serial Number = SV20616823
+/c6 PCB Version = Rev 001
+/c6 PCHIP Version = B4
+/c6 ACHIP Version = 05000e00
+/c6 Controller Phys = 8
+/c6 Connections = 12 of 128
+/c6 Drives = 12 of 127
+/c6 Units = 5 of 127
+/c6 Active Drives = 10 of 127
+/c6 Active Units = 5 of 32
+/c6 Max Drives Per Unit = 32
+/c6 Total Optimal Units = 4
+/c6 Not Optimal Units = 1 
+/c6 Disk Spinup Policy = 1
+/c6 Spinup Stagger Time Policy (sec) = 1
+/c6 Auto-Carving Policy = off
+/c6 Auto-Carving Size = 2048 GB
+/c6 Auto-Rebuild Policy = on
+/c6 Rebuild Mode = Adaptive
+/c6 Rebuild Rate = 1
+/c6 Verify Mode = Adaptive
+/c6 Verify Rate = 1
+/c6 Controller Bus Type = PCIe
+/c6 Controller Bus Width = 8 lanes
+/c6 Controller Bus Speed = 5.0 Gbps/lane
+
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-1    REBUILDING     67%     -       -       1862.63   RiW    OFF    
+u1    RAID-1    OK             -       -       -       1862.63   RiW    OFF    
+u2    RAID-1    OK             -       -       -       1862.63   RiW    OFF    
+u3    RAID-1    OK             -       -       -       1862.63   RiW    OFF    
+u4    RAID-1    OK             -       -       -       1862.63   RiW    OFF    
+
+VPort Status         Unit Size      Type  Phy Encl-Slot    Model
+------------------------------------------------------------------------------
+p8    OK             u4   1.82 TB   SATA  -   /c6/e0/slt1  Hitachi HDS723020BL 
+p9    OK             -    1.82 TB   SATA  -   /c6/e0/slt2  Hitachi HDS723020BL 
+p10   OK             u3   1.82 TB   SATA  -   /c6/e0/slt3  Hitachi HUA723020AL 
+p11   DEGRADED       u0   1.82 TB   SATA  -   /c6/e0/slt4  Hitachi HDS723020BL 
+p12   OK             u1   1.82 TB   SATA  -   /c6/e0/slt5  Hitachi HDS723020BL 
+p13   OK             u2   1.82 TB   SATA  -   /c6/e0/slt7  Hitachi HUA723020AL 
+p14   OK             u0   1.82 TB   SATA  -   /c6/e0/slt8  Hitachi HUA723020AL 
+p15   OK             u2   1.82 TB   SATA  -   /c6/e0/slt9  Hitachi HUA723020AL 
+p16   OK             u3   1.82 TB   SATA  -   /c6/e0/slt10 Hitachi HUA723020AL 
+p17   OK             -    1.82 TB   SATA  -   /c6/e0/slt11 Hitachi HDS723020BL 
+p18   OK             u4   1.82 TB   SATA  -   /c6/e0/slt13 Hitachi HUA723020AL 
+p19   OK             u1   1.82 TB   SATA  -   /c6/e0/slt17 Hitachi HDS723020BL 
+
+Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
+---------------------------------------------------------------------------
+bbu   On           Yes       OK        OK       OK       128    xx-xxx-xxxx  
+
+========================
+ATA section
+========================
+  1 Raw_Read_Error_Rate     0x000f   119   119   050    Pre-fail  Always       -       0/220721972
+196 Reallocated_Event_Count 0x0033   100   100   003    Pre-fail  Always       -       0
+========================
+========================
+  1 Raw_Read_Error_Rate     0x000f   116   116   050    Pre-fail  Always       -       0/122075301
+196 Reallocated_Event_Count 0x0033   100   100   003    Pre-fail  Always       -       0
+========================
+SCSI section
+---***---port=8
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       3464472
+========================
+---***---port=9
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   195   195   000    Old_age   Always       -       5341954
+========================
+---***---port=10
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1752926
+========================
+---***---port=11
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   198   198   000    Old_age   Always       -       3314994
+========================
+---***---port=12
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1489679
+========================
+---***---port=13
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       1
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       1
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1230434
+========================
+---***---port=14
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1739509
+========================
+---***---port=15
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1970248
+========================
+---***---port=16
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1795107
+========================
+---***---port=17
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   197   197   000    Old_age   Always       -       3699132
+========================
+---***---port=18
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1223076
+========================
+---***---port=19
+  1 Raw_Read_Error_Rate     0x000b   100   100   016    Pre-fail  Always       -       0
+  5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       0
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0
+197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       1370456
