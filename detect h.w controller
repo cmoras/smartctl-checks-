@@ -1,0 +1,3 @@
+#check the controller  used 
+
+raid=$(lspci | grep -i raid | grep -oP "(?<=:\ ).*(?=RAID)" | awk '{print $1}') | if [ $raid == "3ware" ];then echo "3ware"; else echo "LSI"; fi
