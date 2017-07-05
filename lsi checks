@@ -1,3 +1,9 @@
+c=$(storcli show  | grep LSI | awk '{print $1}'); storcli /c$c show; storcli /c$c show  | grep -A 30 ^EID:Slt | grep ^[0-9] | awk '{print $2}' | while read p; do echo "---****---port=$p"; smartctl -a -d sat+megaraid,$p /dev/sg0 | egrep "Raw_Read_Error_Rate|Program_Fail_Count|Erase_Fail_Count|Unexpect_Power_Loss_Ct|ECC_Uncorr_Error_Count|Reallocated_Event_Count|Unc_Soft_Read_Err_Rate|Soft_ECC_Correct_Rate|Raw_Read_Error_Rate";done
+
+
+
+
+
 Controller = 0
 Status = Success
 Description = None
