@@ -23,8 +23,13 @@ Writing additional scripts for adaptec controller using einrac commands.
 details:
 
 --faulty disks
+
 --smart output for the same drives
+
 --drive mismatch causing io bottlenecking
+
 --faulty bbu's/cache vaults
+
 --log parsing and obtaing details about patrol read's
+
 
