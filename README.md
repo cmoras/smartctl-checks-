@@ -20,7 +20,7 @@ with  repect to the aboe two controllers there are working scripts ready. Interg
 
 Writing additional scripts for adaptec controller using einrac commands.
 
-details:
+current capabilities:
 
 --faulty disks
 
